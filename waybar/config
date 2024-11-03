@@ -11,21 +11,21 @@
         "sort-by-name": true,
         "format": " {icon} ",
         "format-icons": {
-            "default": "o"
+            "default": "󰑓" // Circle icon for workspaces
         }
     },
     "backlight": {
-        "format": "backlight {percent}%",
+        "format": "󰃞  {percent}%", // Sun icon for backlight
     },
     "tray": {
         "icon-size": 21,
         "spacing": 10
     },
     "battery": {
-        "format": "battery {capacity}%"
+        "format": "󰂄 {capacity}%" // Battery icon
     },
     "custom/music": {
-        "format": "  {}",
+        "format": "  {}", // Music note icon for music module
         "escape": true,
         "interval": 5,
         "tooltip": false,
@@ -36,25 +36,26 @@
     "clock": {
         "timezone": "Europe/Vienna", // Fixed typo from "Erope"
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "date {:%d/%m/%Y}",
-        "format": "time {:%H:%M}"
+        "format-alt": "  {:%d/%m/%Y}", // Calendar icon for date
+        "format": "  {:%H:%M}" // Clock icon for time
     },
     "pulseaudio": {
-        // "scroll-step": 1, // %, can be a float
-        "format": "volume {volume}%",
-        "format-muted": "muted",
+        "scroll-step": 1, // %, can be a float
+        "format": "󰕾  {volume}%", // Speaker icon for volume
+        "format-muted": "󰖁  muted", // Muted icon for mute
         "format-icons": {
-            "default": ["sound"]
+            "default": ["󰕾 "] // Default speaker icon
         },
         "on-click": "pavucontrol"
     },
     "custom/lock": {
         "tooltip": false,
         "on-click": "sh -c '(sleep 0.5s; swaylock --grace 0)' & disown",
-        "format": "lock" // Changed format to "lock" for clarity
+        "format": "  lock" // Lock icon
     },
     "custom/power": {
         "tooltip": false,
-        "on-click": "wlogout &"
+        "on-click": "wlogout &",
+        "format": "  power" // Power icon
     }
 }
