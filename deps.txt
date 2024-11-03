@@ -41,3 +41,4 @@ rsync
 socat             
 axel              
 bind              
+noto-fonts
