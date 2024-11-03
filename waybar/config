@@ -7,16 +7,22 @@
     "modules-center": ["custom/music"],
     "modules-right": ["pulseaudio", "backlight", "battery", "clock", "tray", "custom/lock", "custom/power"],
     "wlr/workspaces": {
-         "disable-scroll": true,
-         "sort-by-name": true,
-         "format": " {icon} ",
-         "format-icons": {
-             "default": "o",
-         },
-     },
+        "disable-scroll": true,
+        "sort-by-name": true,
+        "format": " {icon} ",
+        "format-icons": {
+            "default": "o"
+        }
+    },
+    "backlight": {
+        "format": "backlight {percent}%",
+    },
     "tray": {
         "icon-size": 21,
         "spacing": 10
+    },
+    "battery": {
+        "format": "battery {capacity}%"
     },
     "custom/music": {
         "format": "  {}",
@@ -28,14 +34,14 @@
         "max-length": 50
     },
     "clock": {
-        "timezone": "Erope/Vienna",
+        "timezone": "Europe/Vienna", // Fixed typo from "Erope"
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "date {:%d/%m/%Y}",
         "format": "time {:%H:%M}"
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "{icon} {volume}%",
+        "format": "volume {volume}%",
         "format-muted": "muted",
         "format-icons": {
             "default": ["sound"]
@@ -45,10 +51,10 @@
     "custom/lock": {
         "tooltip": false,
         "on-click": "sh -c '(sleep 0.5s; swaylock --grace 0)' & disown",
-        "format": "system",
+        "format": "lock" // Changed format to "lock" for clarity
     },
     "custom/power": {
         "tooltip": false,
-        "on-click": "wlogout &",
+        "on-click": "wlogout &"
     }
 }
