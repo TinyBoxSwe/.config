@@ -3,16 +3,28 @@
     "position": "bottom", // Waybar position (top|bottom|left|right)
     // "width": 1920, // Waybar width
     // Choose the order of the modules
-    "modules-left": ["wlr/workspaces"],
+    "modules-left": ["hyprland/workspaces"],
     "modules-center": ["custom/music"],
-    "modules-right": ["pulseaudio", "backlight", "battery", "clock", "tray", "custom/lock", "custom/power"],
-    "wlr/workspaces": {
+    "modules-right": ["pulseaudio", "backlight", "battery", "network", "clock", "tray", "custom/lock", "custom/power"],
+    "hyprland/workspaces": {
         "disable-scroll": true,
         "sort-by-name": true,
         "format": " {icon} ",
         "format-icons": {
-            "default": "󰑓" // Circle icon for workspaces
+            "default": "⚪",
+            "active": "⚫",
         }
+    },
+    "network": {
+        "format": "{ifname}",
+        "format-wifi": "({signalStrength}%) ",
+        "format-ethernet": "󰊗",
+        "format-disconnected": "", //An empty format will hide the module.
+        "tooltip-format": "{ifname} via {gwaddr} 󰊗",
+        "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+        "tooltip-format-ethernet": "{ipaddr}/{cidr} {ifname} ",
+        "tooltip-format-disconnected": "Disconnected",
+        "max-length": 50
     },
     "backlight": {
         "format": "󰃞  {percent}%", // Sun icon for backlight
@@ -57,5 +69,5 @@
         "tooltip": false,
         "on-click": "wlogout &",
         "format": "  power" // Power icon
-    }
+    },
 }

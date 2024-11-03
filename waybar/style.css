@@ -8,33 +8,32 @@
 
 #waybar {
   background: transparent;
-  color: @text;
+  color: @text; /* Default text color */
   margin: 5px 5px;
 }
 
 #workspaces {
   border-radius: 1rem;
   margin: 5px;
-  background-color: @surface0;
-  margin-left: 1rem;
+  background-color: @surface0; /* Surface background */
 }
 
 #workspaces button {
-  color: @lavender;
+  color: @lavender; /* Button text color */
   border-radius: 1rem;
   padding: 0.4rem;
 }
 
 #workspaces button.active {
-  color: @sky;
-  border-radius: 1rem;
+  color: @sky; /* Active workspace color */
 }
 
 #workspaces button:hover {
-  color: @sapphire;
-  border-radius: 1rem;
+  color: @sapphire; /* Hover color for buttons */
 }
 
+/* Grouped modules including network */
+#network,
 #custom-music,
 #tray,
 #backlight,
@@ -43,60 +42,78 @@
 #pulseaudio,
 #custom-lock,
 #custom-power {
-  background-color: @surface0;
+  background-color: @surface0; /* Background for grouped modules */
   padding: 0.5rem 1rem;
   margin: 5px 0;
 }
 
+/* Individual styling for clock */
 #clock {
-  color: @blue;
-  border-radius: 0px 1rem 1rem 0px;
+  color: @blue; /* Clock color */
+  border-radius: 0px 1rem 1rem 0px; /* Rounded edges */
   margin-right: 1rem;
 }
 
+/* Battery styling */
 #battery {
-  color: @green;
+  color: @green; /* Battery color */
 }
 
 #battery.charging {
-  color: @green;
+  color: @green; /* Charging color */
 }
 
 #battery.warning:not(.charging) {
-  color: @red;
+  color: @red; /* Warning color */
 }
 
+/* Backlight styling */
 #backlight {
-  color: @yellow;
+  color: @yellow; /* Backlight color */
 }
 
+/* Ensure consistent border radius */
 #backlight, #battery {
-    border-radius: 0;
+    border-radius: 0; /* No rounding */
 }
 
+/* PulseAudio styling */
 #pulseaudio {
-  color: @maroon;
-  border-radius: 1rem 0px 0px 1rem;
+  color: @maroon; /* PulseAudio color */
+  border-radius: 1rem 0px 0px 1rem; /* Rounded edges */
   margin-left: 1rem;
 }
 
+/* Custom music styling */
 #custom-music {
-  color: @mauve;
-  border-radius: 1rem;
+  color: @mauve; /* Custom music color */
+  border-radius: 1rem; /* Rounded edges */
 }
 
+/* Lock styling */
 #custom-lock {
-    border-radius: 1rem 0px 0px 1rem;
-    color: @lavender;
+    border-radius: 1rem 0px 0px 1rem; /* Rounded edges */
+    color: @lavender; /* Lock color */
 }
 
+/* Power button styling */
 #custom-power {
-    margin-right: 1rem;
-    border-radius: 0px 1rem 1rem 0px;
-    color: @red;
+    margin-right: 1rem; /* Right margin */
+    border-radius: 0px 1rem 1rem 0px; /* Rounded edges */
+    color: @red; /* Power color */
 }
 
+/* Tray styling */
 #tray {
-  margin-right: 1rem;
-  border-radius: 1rem;
+  margin-right: 1rem; /* Right margin */
+  border-radius: 1rem; /* Rounded edges */
+}
+
+/* Grouping network with the rest */
+#network {
+  /* This keeps the same styling as the rest of the grouped items */
+  background-color: @surface0; /* Group background */
+  padding: 0.5rem 1rem; /* Padding */
+  margin: 5px 0; /* Margin */
+  color: @pink; /* Network color (example) */
 }
