@@ -11,7 +11,7 @@
          "sort-by-name": true,
          "format": " {icon} ",
          "format-icons": {
-             "default": "",
+             "default": "o",
          },
      },
     "tray": {
@@ -33,24 +33,19 @@
         "format-alt": "date {:%d/%m/%Y}",
         "format": "time {:%H:%M}"
     },
-    "backlight": {
-        "device": "intel_backlight",
-        "format": "{icon}",
-        "format-icons": ["", "", "", "", "", "", "", "", ""]
-    },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
         "format": "{icon} {volume}%",
-        "format-muted": "",
+        "format-muted": "muted",
         "format-icons": {
-            "default": ["", "", " "]
+            "default": ["sound"]
         },
         "on-click": "pavucontrol"
     },
     "custom/lock": {
         "tooltip": false,
         "on-click": "sh -c '(sleep 0.5s; swaylock --grace 0)' & disown",
-        "format": "",
+        "format": "system",
     },
     "custom/power": {
         "tooltip": false,
