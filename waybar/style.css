@@ -12,7 +12,9 @@
   margin: 5px 5px;
 }
 
-#workspaces {
+#workspaces,
+#taskbar
+{
   border-radius: 1rem;
   margin: 5px;
   background-color: @surface0; /* Surface background */
@@ -24,16 +26,16 @@
   padding: 0.4rem;
 }
 
-#workspaces button.active {
-  color: @sky; /* Active workspace color */
-}
 
-#workspaces button:hover {
-  color: @sapphire; /* Hover color for buttons */
+#workspaces button.active,
+#taskbar button.active
+{
+    background-color: @pink;
 }
 
 /* Grouped modules including network */
 #network,
+#bluetooth,
 #custom-music,
 #tray,
 #backlight,
@@ -45,6 +47,10 @@
   background-color: @surface0; /* Background for grouped modules */
   padding: 0.5rem 1rem;
   margin: 5px 0;
+}
+
+#bluetooth {
+    color: @teal; 
 }
 
 /* Individual styling for clock */
