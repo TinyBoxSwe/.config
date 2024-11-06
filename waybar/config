@@ -89,7 +89,7 @@
     },
     "custom/lock": {
         "tooltip": false,
-        "on-click": "sh -c '(sleep 0.5s; swaylock --grace 0)' & disown",
+        "on-click": "swaylock --effect-blur 10x3 -i /home/ivan/Pictures/wallpaper.jpg --clock --indicator --text-color 8800acff --ring-color 8800acff",
         "format": "  lock" // Lock icon
     },
     "custom/power": {
