@@ -15,7 +15,7 @@
 #workspaces,
 #taskbar
 {
-  opacity: 0.8;
+  opacity: 0.7;
   background-color: #181825; /* Background for grouped modules */
   border-radius: 1rem;
   margin: 5px;
@@ -31,7 +31,7 @@
 #workspaces button.active,
 #taskbar button.active
 {
-    opacity: 0.8;
+    opacity: 0.7;
     background-color: @pink;
 }
 
@@ -46,7 +46,7 @@
 #pulseaudio,
 #custom-lock,
 #custom-power {
-  opacity: 0.8;
+  opacity: 0.7;
   background-color: #181825; /* Background for grouped modules */
   padding: 0.5rem 1rem;
   margin: 5px 0;

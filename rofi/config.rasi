@@ -14,5 +14,9 @@ configuration{
     sidebar-mode: true;
 }
 
+ window {
+    background-color: transparent;
+}
+
 @theme "catppuccin-mocha"
 
