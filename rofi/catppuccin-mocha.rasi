@@ -1,13 +1,12 @@
 * {
-    bg-col:  #1e1e2e;  /* Background color */
+    bg-col:  #181825;  /* Background color */
     bg-col-light: #F5D0FE; /* Light background color (Catppuccin Pink) */
     border-col: #1e1e2e; /* Border color */
     selected-col: #F5D0FE; /* Selected color (Catppuccin Pink) */
     blue: #F5D0FE; /* Original blue */
     fg-col: #cdd6f4; /* Foreground color */
     fg-col2: #FF1B18; /* Secondary foreground color (Catppuccin Pink) */
-    grey: #6c7086; /* Grey color */
-
+    grey: #6c7086; /* Grey color */ 
     width: 600;
     font: "JetBrainsMono Nerd Font 14";
 }
@@ -26,6 +25,7 @@ window {
 
 mainbox {
     background-color: @bg-col;
+    opacity: 0.8;
 }
 
 inputbar {

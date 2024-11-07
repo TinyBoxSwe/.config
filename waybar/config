@@ -89,8 +89,8 @@
     },
     "custom/lock": {
         "tooltip": false,
-        "on-click": "swaylock --effect-blur 10x3 -i /home/ivan/Pictures/wallpaper.jpg --clock --indicator --text-color 8800acff --ring-color 8800acff",
-        "format": "  lock" // Lock icon
+        "on-click": "swaylock --effect-blur 10x3 -i /home/ivan/Pictures/wallpaper.jpg --clock --indicator --text-color ea76cb --ring-color ea76cb --ring-ver-color ea76cb --ring-wrong-color ea76cb --ring-clear-color ea76cb",
+        "format": "  lock", // Lock icon
     },
     "custom/power": {
         "tooltip": false,

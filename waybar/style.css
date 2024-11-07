@@ -15,9 +15,10 @@
 #workspaces,
 #taskbar
 {
+  opacity: 0.8;
+  background-color: #181825; /* Background for grouped modules */
   border-radius: 1rem;
   margin: 5px;
-  background-color: @surface0; /* Surface background */
 }
 
 #workspaces button {
@@ -30,6 +31,7 @@
 #workspaces button.active,
 #taskbar button.active
 {
+    opacity: 0.8;
     background-color: @pink;
 }
 
@@ -44,7 +46,8 @@
 #pulseaudio,
 #custom-lock,
 #custom-power {
-  background-color: @surface0; /* Background for grouped modules */
+  opacity: 0.8;
+  background-color: #181825; /* Background for grouped modules */
   padding: 0.5rem 1rem;
   margin: 5px 0;
 }
@@ -118,7 +121,7 @@
 /* Grouping network with the rest */
 #network {
   /* This keeps the same styling as the rest of the grouped items */
-  background-color: @surface0; /* Group background */
+  background-color: #181825; /* Group background */
   padding: 0.5rem 1rem; /* Padding */
   margin: 5px 0; /* Margin */
   color: @pink; /* Network color (example) */
