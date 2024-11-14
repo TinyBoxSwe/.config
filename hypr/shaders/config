@@ -32,7 +32,7 @@ const vec3 Balance = vec3(
  * @min -1.0
  * @max 1.0
  */
-const float Strength = float({{#nc}}{{strength}} ? 0.35{{/nc}});
+const float Strength = float({{#nc}}{{strength}} ? 0.25{{/nc}});
 
 const vec3 VIB_coeffVibrance = Balance * -Strength;
 
@@ -40,7 +40,7 @@ void main() {
     vec4 pixColor = texture2D(tex, v_texcoord);
     vec3 color = vec3(pixColor[0], pixColor[1], pixColor[2]);
 
-    // vec3 VIB_coefLuma = vec3(0.333333, 0.333334, 0.333333); // was for `if VIB_LUMA == 1`
+    //vec3 VIB_coefLuma = vec3(0.333333, 0.333334, 0.333333); // was for `if VIB_LUMA == 1`
     vec3 VIB_coefLuma = vec3(0.212656, 0.715158, 0.072186); // try both and see which one looks nicer.
 
     float luma = dot(VIB_coefLuma, color);
