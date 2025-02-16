@@ -1,4 +1,4 @@
-@import "mocha.css";
+@import "cinnamon.css";
 
 * {
   font-size: 16px;
@@ -8,31 +8,30 @@
 
 #waybar {
   background: transparent;
-  color: @text; /* Default text color */
+  color: @pink; /* Default text color */
   margin: 5px 5px;
 }
 
 #workspaces,
 #taskbar
 {
-  opacity: 0.7;
-  background-color: #181825; /* Background for grouped modules */
+  opacity: 0.9;
+  background-color: @sky; /* Background for grouped modules */
   border-radius: 1rem;
   margin: 5px;
 }
 
 #workspaces button {
-  color: @lavender; /* Button text color */
+  color: @yellow; /* Button text color */
   border-radius: 1rem;
   padding: 0.4rem;
 }
 
-
 #workspaces button.active,
 #taskbar button.active
 {
-    opacity: 0.7;
-    background-color: @pink;
+    opacity: 0.9;
+    background-color: @yellow;
 }
 
 /* Grouped modules including network */
@@ -46,34 +45,33 @@
 #pulseaudio,
 #custom-lock,
 #custom-power {
-  opacity: 0.7;
-  background-color: #181825; /* Background for grouped modules */
+  background-color: @sky; /* Background for grouped modules */
   padding: 0.5rem 1rem;
   margin: 5px 0;
 }
 
 #bluetooth {
-    color: @teal; 
+    color: @yellow; 
 }
 
 /* Individual styling for clock */
 #clock {
-  color: @blue; /* Clock color */
+  color: @yellow; /* Clock color */
   border-radius: 0px 1rem 1rem 0px; /* Rounded edges */
   margin-right: 1rem;
 }
 
 /* Battery styling */
 #battery {
-  color: @green; /* Battery color */
+  color: @yellow; /* Battery color */
 }
 
 #battery.charging {
-  color: @green; /* Charging color */
+  color: @yellow; /* Charging color */
 }
 
 #battery.warning:not(.charging) {
-  color: @red; /* Warning color */
+  color: @yellow; /* Warning color */
 }
 
 /* Backlight styling */
@@ -88,28 +86,28 @@
 
 /* PulseAudio styling */
 #pulseaudio {
-  color: @maroon; /* PulseAudio color */
+  color: @yellow; /* PulseAudio color */
   border-radius: 1rem 0px 0px 1rem; /* Rounded edges */
   margin-left: 1rem;
 }
 
 /* Custom music styling */
 #custom-music {
-  color: @mauve; /* Custom music color */
+  color: @yellow; /* Custom music color */
   border-radius: 1rem; /* Rounded edges */
 }
 
 /* Lock styling */
 #custom-lock {
     border-radius: 1rem 0px 0px 1rem; /* Rounded edges */
-    color: @lavender; /* Lock color */
+    color: @yellow; /* Lock color */
 }
 
 /* Power button styling */
 #custom-power {
     margin-right: 1rem; /* Right margin */
     border-radius: 0px 1rem 1rem 0px; /* Rounded edges */
-    color: @red; /* Power color */
+    color: @yellow; /* Power color */
 }
 
 /* Tray styling */
@@ -121,8 +119,7 @@
 /* Grouping network with the rest */
 #network {
   /* This keeps the same styling as the rest of the grouped items */
-  background-color: #181825; /* Group background */
   padding: 0.5rem 1rem; /* Padding */
   margin: 5px 0; /* Margin */
-  color: @pink; /* Network color (example) */
+  color: @yellow; /* Network color */
 }
